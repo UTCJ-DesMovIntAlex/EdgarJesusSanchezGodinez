@@ -1,0 +1,7 @@
+{
+  "name": "HolaIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

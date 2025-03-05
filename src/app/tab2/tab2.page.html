@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Registro de Personaje</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list>
+          <!-- Nombre -->
+          <ion-item>
+            <ion-label position="stacked">Nombre</ion-label>
+            <ion-input placeholder="Ingrese nombre"></ion-input>
+          </ion-item>
+
+          <!-- Clase -->
+          <ion-item>
+            <ion-label>Clase</ion-label>
+            <ion-select>
+              <ion-select-option>Guerrero</ion-select-option>
+              <ion-select-option>Mago</ion-select-option>
+              <ion-select-option>Arquero</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <!-- Género -->
+          <ion-item>
+            <ion-label>Género</ion-label>
+            <ion-select>
+              <ion-select-option>Masculino</ion-select-option>
+              <ion-select-option>Femenino</ion-select-option>
+              <ion-select-option>Otro</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <!-- Fecha de Nacimiento -->
+          <ion-item>
+            <ion-label position="stacked">Fecha de Nacimiento</ion-label>
+            <ion-datetime display-format="YYYY-MM-DD"></ion-datetime>
+          </ion-item>
+
+          <!-- Estadísticas -->
+          <ion-item>
+            <ion-label position="stacked">Vida</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Fuerza</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Agilidad</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+
+          <!-- Botón -->
+          <ion-button expand="full">Registrar</ion-button>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<style>
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  ion-card {
+    width: 320px;
+    text-align: center;
+  }
+
+  ion-button {
+    margin-top: 10px;
+  }
+</style>
